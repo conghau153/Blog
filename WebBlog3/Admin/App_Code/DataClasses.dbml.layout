@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e11d38ad-60e4-4ed0-9555-f3b65ce092e3" absoluteBounds="3.75, 3.875, 2, 1.193992513020834">
+      <DataClassMoniker Name="/DataClassesDataContext/Author_CategoryTBx" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f658f036-d4a0-4910-8771-856401840e3c" absoluteBounds="3.765, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0fb31e0-a81f-4d01-861c-0cdf85e1c05d" absoluteBounds="1, 4.375, 2, 1.9631982421874992">
+      <DataClassMoniker Name="/DataClassesDataContext/AuthorTBx" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a223c828-22c5-46ff-b61d-e36c111388b2" absoluteBounds="1.0150000000000001, 4.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8318c297-ce3d-479d-a90a-dfb918cdd330" absoluteBounds="3.75, 6.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/BookTBx" />
+      <nestedChildShapes>
+        <elementListCompartment Id="028750e1-9e47-4faa-b351-32f3e7cab5d5" absoluteBounds="3.765, 6.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96006465-6fe5-47a6-ae5e-98fa4dfec26f" absoluteBounds="1, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/CategoryTBx" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f05d9306-329a-44f2-bff8-0c2c19571642" absoluteBounds="1.0150000000000001, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="273bb684-eb57-42ca-9a1d-c11a4d03da1d" absoluteBounds="6.5, 6.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DataClassesDataContext/ImageTBx" />
+      <nestedChildShapes>
+        <elementListCompartment Id="245e69ed-d76d-43de-8bf2-2ce0bd77dcd4" absoluteBounds="6.515, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 4.72199625651042); (3.75 : 4.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/AuthorTBx/AuthorTBx_Author_CategoryTBx" />
+      <nodes>
+        <classShapeMoniker Id="b0fb31e0-a81f-4d01-861c-0cdf85e1c05d" />
+        <classShapeMoniker Id="e11d38ad-60e4-4ed0-9555-f3b65ce092e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2 : 6.3381982421875); (2 : 7.37184945833333); (3.75 : 7.37184945833333)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/AuthorTBx/AuthorTBx_BookTBx" />
+      <nodes>
+        <classShapeMoniker Id="b0fb31e0-a81f-4d01-861c-0cdf85e1c05d" />
+        <classShapeMoniker Id="8318c297-ce3d-479d-a90a-dfb918cdd330" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 2.41429768880208); (4.75 : 2.41429768880208); (4.75 : 3.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/CategoryTBx/CategoryTBx_Author_CategoryTBx" />
+      <nodes>
+        <classShapeMoniker Id="96006465-6fe5-47a6-ae5e-98fa4dfec26f" />
+        <classShapeMoniker Id="e11d38ad-60e4-4ed0-9555-f3b65ce092e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 7.31814697265625); (6.5 : 7.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/BookTBx/BookTBx_ImageTBx" />
+      <nodes>
+        <classShapeMoniker Id="8318c297-ce3d-479d-a90a-dfb918cdd330" />
+        <classShapeMoniker Id="273bb684-eb57-42ca-9a1d-c11a4d03da1d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
